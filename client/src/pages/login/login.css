@@ -1,0 +1,134 @@
+/* Default styles for larger screens */
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginWrapper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.loginLeft,
+.loginRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginLogo {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1775ee;
+    margin-bottom: 10px;
+}
+
+.loginDesc {
+    font-size: 24px;
+}
+
+.loginBox {
+    min-height: 300px;
+    /* Set a minimum height */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loginInput {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.loginButton {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginForgot {
+    text-align: center;
+    color: #1775ee;
+}
+
+.loginRegisterButton {
+    width: 60%;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .login {
+        justify-content: flex-start;
+        overflow: hidden;
+        height: fit-content;
+        padding: 20px;
+        /* Add some padding for spacing */
+    }
+
+    .loginWrapper {
+        width: 90%;
+        /* Take up 90% of the screen width */
+        height: auto;
+        /* Allow height to adjust dynamically */
+        flex-direction: column;
+        /* Stack loginLeft and loginRight vertically */
+    }
+
+    .loginLogo {
+        font-size: 40px;
+        /* Make the logo smaller */
+    }
+
+    .loginDesc {
+        font-size: 18px;
+        display: none;
+        /* Make description text smaller */
+    }
+
+    .loginBox {
+        width: 100%;
+        padding: 20px;
+        /* Adjust padding for mobile */
+        /* Add some spacing at the top */
+    }
+        .loginButton{
+            width: 100%;
+        }
+
+    .loginInput,
+    
+    .loginRegisterButton {
+        width: 90%;
+        /* Take up full width */
+    }
+}
